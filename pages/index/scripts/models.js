@@ -8,6 +8,7 @@ define("models", function(){
             "UI组件": {
                 "accordion": "手风琴",
                 "at": "@组件",
+                "breadcrumb": "面包屑组件",
                 "browser": "浏览器检测模块",
                 "button": "按钮",
                 "camera": "百叶窗图片轮播",
@@ -53,6 +54,7 @@ define("models", function(){
                 "draggable": "拖拽/可拖动",
                 "lazyload": "懒加载",
                 "mmPromise": "异步列队",
+                "mmRequest": "ajax请求",
                 "mmRouter": "路由",
                 "position": "定位",
                 "resizable": "伸缩",
@@ -77,6 +79,9 @@ define("models", function(){
             },
             "at": {
                 "例子1": "avalon.at.ex1.html"
+            },
+            "breadcrumb": {
+                "例子": "avalon.breadcrumb.ex.html"
             },
             "browser": {
                 "例子": "avalon.browser.ex.html"
@@ -214,13 +219,15 @@ define("models", function(){
                 "联动的dropdown": "avalon.dropdown.ex12.html",
                 "dropdown状态保持功能": "avalon.dropdown.ex13.html",
                 "多个dropdown共享状态": "avalon.dropdown.ex14.html",
-                "鼠标移入移出下拉菜单自动显示隐藏": "avalon.dropdown.ex15.html"
+                "鼠标移入移出下拉菜单自动显示隐藏": "avalon.dropdown.ex15.html",
+                "分组联动": "avalon.dropdown.ex16.html"
             },
             "fileuploader": {
                 "uploader基础配置项": "avalon.fileuploader.ex1.html",
                 "预览图和进度条配置": "avalon.fileuploader.ex2.html",
                 "大文件和分块配置": "avalon.fileuploader.ex3.html",
-                "文件Ajax请求参数的配置": "avalon.fileuploader.ex5.html"
+                "文件Ajax请求参数的配置": "avalon.fileuploader.ex5.html",
+                "fileObj文件对象说明": "avalon.fileuploader.ex6.html"
             },
             "kindeditor": {
                 "默认配置": "avalon.kindeditor.ex1.html",
@@ -242,8 +249,8 @@ define("models", function(){
                 "懒加载组件-自定义effect(加载效果)和各自delay(加载延迟)": "avalon.lazyload.ex1.html",
                 "懒加载组件-自定义加载中图片": "avalon.lazyload.ex2.html",
                 "懒加载组件-预加载采用文字模式": "avalon.lazyload.ex3.html",
-                "懒加载组件-懒加载页面元素": "avalon.lazyload.ex4.html",
-                "懒加载组件-自定义懒加载尺寸": "avalon.lazyload.ex5.html"
+                "懒加载组件-懒加载文档片段": "avalon.lazyload.ex4.html",
+                "懒加载组件-懒加载轮播组件": "avalon.lazyload.ex5.html"
             },
             "JSON": {},
             "live": {
@@ -330,9 +337,9 @@ define("models", function(){
                 "mmRouter综合示例三: scrolltoview": "avalon.mmRouter.ex2.html",
                 "mmRouter试验田: 最新版mmRouter试验田": "avalon.mmRouter.ex3.html",
                 "mmRouter: avalon.state": "avalon.mmRouter.ex4.html",
-                "mmRouter综合示例五: html5Mode[pushState,popState]，可能需要服务器支持": "avalon.mmRouter.ex5.html",
-                "mmRouter：登录跳转": "avalon.mmRouter.ex6.html",
-                "mmRouter：异步": "avalon.mmRouter.ex7.html",
+                "mmRouter综合示例五: html5Mode pushState,popState, 可能需要服务器支持": "avalon.mmRouter.ex5.html",
+                "mmRouter: 登录跳转": "avalon.mmRouter.ex6.html",
+                "mmRouter: 异步": "avalon.mmRouter.ex7.html",
                 "todos": "avalon.mmRouter.ex8.html",
                 "mmRouter-基于状态机的路由器": "avalon.mmRouter.ex9.html"
             },

@@ -64,8 +64,33 @@ require(["pages/index/scripts/models", "pages/index/scripts/utils", "pages/index
         }
     })
 
+    var init = 1
+    avalon.state.config({
+        onLoad: function(){
+            if(QReport){
+                var hash = location.hash,
+                    hashArr = hash.split("?"),
+                    widgetId = this.query.widgetId,
+                    ex = this.query.ex
+
+                if(typeof hashArr[1] !== "undefined"){
+                    hash = hashArr[1]
+                }
+
+                QReport.pv({
+                    pg: hash,
+                    widgetId: widgetId,
+                    ex: ex,
+                    init: init
+                })
+            }
+            init = 0
+        }
+    })
+
     avalon.history.start({
         basepath: "/mmRouter"
+
     })
 
     avalon.scan();
